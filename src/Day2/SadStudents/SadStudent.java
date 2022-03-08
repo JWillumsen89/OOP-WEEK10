@@ -1,4 +1,4 @@
-package Day2.SadStudent;
+package Day2.SadStudents;
 
 public class SadStudent {
   String name;
