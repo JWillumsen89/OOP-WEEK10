@@ -2,27 +2,32 @@ package Day2.Lamp;
 
 public class Lamp {
 
-  boolean lampOn = true;
+  String name;
+  boolean lampOff = true;
 
   Lamp() {
   }
 
+  Lamp(String nameInput) {
+    name = nameInput;
+  }
+
   void pushSwitch() {
-    if (lampOn == true) {
-      //System.out.println("Lamp is switched on!");
-      lampOn = false;
-    } else if (lampOn == false) {
-      // System.out.println("Lamp is switched off");
-      lampOn = true;
+    if (lampOff == true) {
+      //System.out.println("Lamp is switched off!");
+      lampOff = false;
+    } else if (lampOff == false) {
+      // System.out.println("Lamp is switched ooo");
+      lampOff = true;
     }
   }
 
   @Override
   public String toString() {
-    if (lampOn == true) {
-      return "Lamp is switched on!";
+    if (lampOff == true) {
+      return name + " lamp is switched off!";
     } else {
-      return "Lamp is switched off!";
+      return name + " lamp is switched on!";
     }
   }
 }
