@@ -7,8 +7,8 @@ public class TestMain {
 
   void go() {
     Lamp lamp1 = new Lamp("Living room");
-    lamp1.lampOff = true;
     lamp1.pushSwitch();
+    //lamp1.pushSwitch();
     System.out.println(lamp1);
 
     Lamp lamp2 = new Lamp("Table");
